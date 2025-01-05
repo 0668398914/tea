@@ -446,6 +446,15 @@ body{
     .assortment{
         margin-bottom: 80px;
     }
+
+    .reviews__item{
+        flex-basis: 100%;
+    }
+
+    .reviews__item:last-child,
+    .reviews__item:first-child{
+        display: none;
+    }
 }
 
 /* __________________________360______________________________ */
