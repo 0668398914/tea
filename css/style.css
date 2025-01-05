@@ -86,7 +86,7 @@ body{
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     z-index: 1;
-    transition: background-color .3s ease  ;
+    transition: background-color .7s ease  ;
 }
 
 .menu--close.menu--open{
