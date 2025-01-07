@@ -661,13 +661,13 @@ body{
         display: none;
     }
 
-    .main-blog__list{
-        display: flex;
+    .main-blog{
+    padding-bottom: 100px;
 
     }
     .main-blog__item-img{
         width: 200px;
-        height: 200px;
+        height: 150px;
     }
 }
 
