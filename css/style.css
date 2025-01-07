@@ -51,7 +51,7 @@ body{
     color: #151618;
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: normal;
     position: relative;
 }
 
@@ -196,7 +196,8 @@ body{
 
 .reviews{
     background-color: #f7f2ea;
-    padding-bottom: 60px 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .reviews__list{
@@ -218,6 +219,202 @@ body{
 .reviews__name{
     font-weight: 600;
 }
+
+.main-blog{
+    padding: 150px 0;
+}
+
+.main-blog__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 58px;
+}
+
+.main-blog__item{
+    flex-basis: 542px;
+    display: flex;
+    gap: 0 20px ;
+}
+
+.main-blog__item-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-blog__item-title{
+    font-family: 'Cormorant', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    min-height: 86px;
+}
+
+.main-blog__item-author{
+    font-size: 13px;
+}
+
+.main-blog__item-link{
+    margin-top: auto;
+    font-size: 13px;
+    position: relative;
+}
+
+.main-blog__item-link::after{
+    content: '';
+    background-image: url(../images/arrow.svg);
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    margin-left: 8px;
+    bottom: 3px;
+}
+
+.main-blog__link{
+    padding: 12px 41px;
+    display: flex;
+    justify-content: center;
+    margin: 72px auto 0;
+    border: 1px solid #151618;
+    width: 152px;
+}
+
+.main-blog__link:hover{
+    background-color: #f7f2ea;
+    transition: background-color .3s ease;
+}
+
+.mailing-list{
+    padding: 100px 0;
+    background-color: #f7f2ea;
+    background-image: url(../images/mailing-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.mailing-list__title{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+
+.mailing-list__inner{
+    display: flex;
+    gap: 60px 40px;
+}
+
+.mailing-list__text{
+    line-height: 1.5;
+    flex-basis: 580px;
+}
+
+.mailing-list__form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 580px;
+}
+
+.mailing-list__email{
+    border: none;
+    border-bottom: 1px solid #b8b58b;
+    background-color: transparent;
+    padding: 3px 15px;
+    width: 436px;
+    margin-right: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #151618;
+}
+
+.mailing-list__email::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #b8b58b;
+}
+
+.mailing-list__btn{
+    background-color: #fff;
+    border: 1px solid #151618;
+    padding: 12px 41px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer ;
+}
+
+.mailing-list__btn:hover{
+    background-color: #f7f2ea;
+    transition: background-color .3s ease;
+}
+
+.checkbox__text{
+    font-size: 13px;
+}
+
+.mailing-list__label{
+    margin-top: 16px;
+    
+}
+
+.checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.checkbox-style{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #151618;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+.checkbox:checked + .checkbox-style::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #151618;
+    top: 1px;
+    left: 1px;
+}
+
+
+.prioritise{
+    padding: 150px 0;
+}
+
+.prioritise__list{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 49px;
+}
+
+.prioritise__title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.prioritise__text{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+
 
 
 
@@ -430,7 +627,7 @@ body{
 
 
 
-/* ________________________440________________________________ */
+/* ________________________440___IPHONE 14 PRo Max_____________________________ */
 
 @media(max-width: 440px){
     .title{
@@ -454,6 +651,23 @@ body{
     .reviews__item:last-child,
     .reviews__item:first-child{
         display: none;
+    }
+
+    .mailing-list__title{
+        margin-left: 40px;
+    }
+
+    .mailing-list__form{
+        display: none;
+    }
+
+    .main-blog__list{
+        display: flex;
+
+    }
+    .main-blog__item-img{
+        width: 200px;
+        height: 200px;
     }
 }
 
