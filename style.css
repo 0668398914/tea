@@ -627,7 +627,7 @@ body{
 
 
 
-/* ________________________440________________________________ */
+/* ________________________440___IPHONE 14 PRo Max_____________________________ */
 
 @media(max-width: 440px){
     .title{
@@ -651,6 +651,23 @@ body{
     .reviews__item:last-child,
     .reviews__item:first-child{
         display: none;
+    }
+
+    .mailing-list__title{
+        margin-left: 40px;
+    }
+
+    .mailing-list__form{
+        display: none;
+    }
+
+    .main-blog__list{
+        display: flex;
+
+    }
+    .main-blog__item-img{
+        width: 200px;
+        height: 200px;
     }
 }
 
