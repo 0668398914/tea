@@ -413,6 +413,32 @@ body{
     font-weight: 600;
 }
 
+.footer{
+    padding: 100px 0 20px;
+    background-color: #f7f2ea;
+}
+
+
+
+.footer__inner{
+    margin-bottom: 100px;
+}
+
+.footer__bottom{
+    display: flex;
+}
+
+.footer__copy{
+    margin-right: 192px;
+    font-size: 16px;
+}
+
+.partners-logo{
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
 
 
 
@@ -828,7 +854,11 @@ body{
     }
 
     .mailing-list__email{
-        width: 250px;
+        width: 260px;
+    }
+
+    .prioritise{
+        padding: 50px 0;
     }
 
     .prioritise__title{
@@ -837,9 +867,15 @@ body{
 
     .prioritise__text{
         font-size: 10px;
-        text-transform: ;
+        font-weight: 400;
+        text-transform:uppercase ;
+    }
+
+    .prioritise__list{
+        gap: 40px 100px;
     }
     
+   
 
 }
 
@@ -922,13 +958,22 @@ body{
         width: 190px;
     }
 
+    .prioritise{
+        padding: 50px 0;
+    }
+
     .prioritise__title{
         font-size: 20px;
     }
 
     .prioritise__text{
         font-size: 10px;
-        text-transform: ;
+        font-weight: 400;
+        text-transform:uppercase ;
+    }
+
+    .prioritise__list{
+        gap: 40px 100px;
     }
     
 
