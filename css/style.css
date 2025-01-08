@@ -446,6 +446,7 @@ body{
 
 
 
+
 /* ----------------------------------------------------------------------@MEDIA------------------------------------------ */
 
 
@@ -854,7 +855,7 @@ body{
     }
 
     .mailing-list__email{
-        width: 260px;
+        width: 250px;
     }
 
     .prioritise{
@@ -873,6 +874,12 @@ body{
 
     .prioritise__list{
         gap: 40px 100px;
+    }
+
+
+    .footer__bottom{
+        justify-content: center;
+        align-items: center;
     }
     
    
